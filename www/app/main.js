@@ -7,7 +7,14 @@ define(function (require) {
     // Load library/vendor modules using
     // full IDs, like:
     var print = require('print');
-    var angular = require('angular.js');
+    var angular = require('angular');
 
     print(messages.getHello());
+
+    var app = angular.module('app', []);
+
+    app.controller('Ctrl', function($scope){
+        $scope.variable = "Hello World";
+    });
+
 });
