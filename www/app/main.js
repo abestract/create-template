@@ -9,9 +9,9 @@ define(function (require) {
     var print = require('print');
     var angular = require('angular');
 
-    //print(messages.getHello());
+    print(messages.getHello());
 
-    //console.log(angular);
+    console.log(angular);
 
     var app = angular.module('app', []);
 

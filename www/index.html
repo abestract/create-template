@@ -2,14 +2,19 @@
 <html>
     <head>
     	<script data-main="app" src="lib/require.js"></script>
+    	<style>
+    		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  				display: none !important;
+			}
+    	</style>
     </head>
-    <body>
-    <h1>Hello World</h1>
-    <h1>Angular Controller</h1>	
-    <div ng-controller="myCtrl">
-        <p>{{variable}}</p>
-    </div>
-    <input type="text" ng-model="name" />
-    <h1>{{name}}</h1> 
-</body>
+    <body class="ng-cloak">
+    	<h1>Hello World</h1>
+    	<h1>Angular Controller</h1>	
+    	<div ng-controller="myCtrl">
+        	<p>{{variable}}</p>
+    	</div>
+    	<input type="text" ng-model="name" />
+    	<h1>{{name}}</h1> 
+	</body>
 </html>
