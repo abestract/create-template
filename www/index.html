@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script data-main="app" src="lib/require.js"></script>
+    	<script data-main="app" src="lib/require.js"></script>
     </head>
     <body>
     <h1>Hello World</h1>
-    
     <h1>Angular Controller</h1>	
-    <div ng-controller="Ctrl">
+    <div ng-controller="myCtrl">
         <p>{{variable}}</p>
-    </div>    
+    </div>
+    <input type="text" ng-model="name" />
+    <h1>{{name}}</h1> 
 </body>
 </html>

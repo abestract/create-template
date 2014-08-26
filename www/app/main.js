@@ -9,12 +9,15 @@ define(function (require) {
     var print = require('print');
     var angular = require('angular');
 
-    print(messages.getHello());
+    //print(messages.getHello());
+
+    //console.log(angular);
 
     var app = angular.module('app', []);
 
-    app.controller('Ctrl', function($scope){
-        $scope.variable = "Hello World";
+
+    app.controller('myCtrl', function($scope){
+        $scope.variable = "Hello Angular.";
     });
 
 });
