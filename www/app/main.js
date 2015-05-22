@@ -11,7 +11,6 @@ define(function (require) {
 
     print(messages.getHello());
 
-    console.log(angular);
 
     var app = angular.module('app', []);
 
